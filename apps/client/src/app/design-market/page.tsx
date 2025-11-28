@@ -15,6 +15,7 @@ const DesignMarketPage = async ({
           alt="Featured Product"
           fill
           style={{ objectFit: "cover" }}
+          priority
         />
       </div>
       <ProductList category={category} params="homepage" />

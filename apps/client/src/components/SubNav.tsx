@@ -14,7 +14,7 @@ export default function SubNav() {
   ]
 
   return (
-    <nav className="w-full border-b border-gray-200 mb-4">
+    <nav className="w-full mb-4 mt-3">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-y-4 gap-x-10 py-3">
         {navItems.map((item) => {
           const Icon = item.icon
