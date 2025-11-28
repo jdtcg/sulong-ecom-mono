@@ -11,7 +11,11 @@ app.use(
 )
 
 app.get("/health", (req: Request, res: Response) => {
-  res.json({ message: "Product endpoint works!" })
+  return res.status(200).json({
+    status: "ok",
+    uptime: process.uptime(),
+    timestamp: Date.now(),
+  })
 })
 
 app.listen(8000, () => {
